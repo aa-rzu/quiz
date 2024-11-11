@@ -1,0 +1,134 @@
+/* Body Styling */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-optical-sizing: auto;
+    background-image: url('pics/education-day-scene-fantasy-style-aesthetic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the background cover the whole container */
+    background-position: center;
+    background-attachment: fixed; /* Ensures the background stays fixed */
+    color: #f5f5f5; /* Light text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling on the body if content exceeds height */
+    cursor: url('pics/magic-wand_348003.png'), auto;
+  }
+  
+  
+/* Quiz Container Styling */
+.quiz-container {
+    background-color: rgba(27, 27, 27, 0.7); /* Dark transparent background (0.7 is the opacity) */
+    /* Add your image URL here */
+     /* Centers the image */
+    border: 2px solid #3a3a3a;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 950px;
+    text-align: left;
+    animation: fadeIn 0.6s ease-out;
+    box-sizing: border-box;
+    margin-top: 600px;
+    cursor: url('pics/magic-wand_348003.png'), auto;
+    /* Remove overflow settings from here */
+}
+
+/* Header Styling */
+h2 {
+    font-size: 2.5em;
+    color: #ffdd57; /* Golden-yellow, like Hogwarts colors */
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(255, 221, 87, 0.5); /* Subtle glowing effect */
+}
+
+/* Question and Label Styling */
+.question {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.question p {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-size: 1.1em;
+    color: #bbbbbb;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: #22222261;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: left;
+    cursor: url('pics/magic-wand_348003.png'), auto;
+}
+
+label:hover {
+    background-color: #333333;
+    transform: scale(1.02);
+    color: #ffdd57; /* Text turns golden on hover */
+    cursor: url('pics/magic-wand_348003.png'), auto;
+    
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Button Styling */
+button {
+    background-color: #3d8b3d; /* Green, inspired by Hogwarts house colors */
+    color: #ffffff;
+    padding: 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px;
+    text-align: center;
+    cursor: url('pics/magic-wand_348003.png'), auto;
+}
+
+button:hover {
+    background-color: #2a6b2a;
+    transform: scale(1.05);
+    cursor: url('pics/magic-wand_348003.png'), auto;
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffdd57;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
